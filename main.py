@@ -39,7 +39,7 @@ for post in cuc_almacenes_posts:
 
 # Parte del Taller: 
 # TODO: Lee la documentacion del Pages API y trata de obtener algun otra informacion
-
+# https://developers.facebook.com/docs/pages-api/
 
 ## Paso 5: Guarda los posts en una base de datos NoSql 
 print('🔍 Guardando los posts en una base de datos NoSql')

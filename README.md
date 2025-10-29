@@ -277,7 +277,7 @@ Como parte del taller, se espera que completes las siguientes actividades:
 Si tienes problemas durante el taller:
 1. Lee cuidadosamente los mensajes de error
 2. Verifica que todos los pasos previos se hayan completado correctamente
-3. Consulta con el instructor
+3. Consulta con el grupo que esta exponiendo
 4. Revisa la documentación oficial de las herramientas utilizadas
 
 ---
