@@ -1,4 +1,4 @@
-# Facebook Client - Taller de Extracción de Datos
+# Facebook API - Taller de Extracción de Datos
 
 ## 📋 Propósito del Proyecto
 
