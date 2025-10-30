@@ -1,4 +1,4 @@
-# Facebook API - Taller de Extracción de Datos
+# Facebook API - Taller de Extracción de Datos - Proyecto Python
 
 ## 📋 Propósito del Proyecto
 
