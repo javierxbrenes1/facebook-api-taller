@@ -247,22 +247,28 @@ Este es el **archivo principal** que ejecuta todo el flujo del programa.
 
 Como parte del taller, se espera que completes las siguientes actividades:
 
-### Actividad 1: Explorar el API de Facebook
-- Lee la documentación oficial: https://developers.facebook.com/docs/graph-api/reference/page/
-- Identifica qué otra información puedes obtener de las páginas
-- Modifica `facebook_client.py` para agregar una nueva función que obtenga esa información
+### Actividad 1: Entender main.py y descomentar el código (Obligatoria)
+- Ingresa a `main.py`, encontraras el codigo totalmente comentado.
+- Comienza a ller el codigo, entendiendo que hace, y descomentando las lineas.
+- Ejecuta el script.
+- Si todo esta correcto, deberias ser capaz de ver los datos en MongoDB.
 
-### Actividad 2: Implementar Guardado en SQL Server
+### Actividad 2: Analizar los Datos (Obligatoria)
+- Usa MongoDB Compass o cualquier herramienta para visualizar los datos guardados
+- Analiza qué información es más relevante
+- Piensa en qué consultas podrías hacer sobre estos datos
+
+### Actividad 3: Implementar Guardado en SQL Server
 - Completa la función `save_posts_in_sql_server()` en `storage.py`
 - Instala el driver necesario: `pip install pyodbc`
 - Crea la conexión a SQL Server
 - Diseña las tablas necesarias
 - Implementa la lógica de inserción
 
-### Actividad 3: Analizar los Datos
-- Usa MongoDB Compass o cualquier herramienta para visualizar los datos guardados
-- Analiza qué información es más relevante
-- Piensa en qué consultas podrías hacer sobre estos datos
+### Actividad 4: Explorar el API de Facebook
+- Lee la documentación oficial: https://developers.facebook.com/docs/graph-api/reference/page/
+- Identifica qué otra información puedes obtener de las páginas
+- Modifica `facebook_client.py` para agregar una nueva función que obtenga esa información
 
 ---
 
