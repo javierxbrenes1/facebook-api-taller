@@ -65,7 +65,7 @@ Este proyecto utiliza **Python 3** (específicamente Python 3.7 o superior).
 
 1. Abre Visual Studio Code
 2. Ve a **Archivo > Abrir Carpeta** (o File > Open Folder)
-3. Navega hasta la carpeta `facebook-client`
+3. Navega hasta la carpeta `facebook-api-taller`
 4. Haz clic en "Seleccionar carpeta"
 
 ### Paso 2: Abrir la Terminal en VSCode
@@ -74,7 +74,7 @@ Este proyecto utiliza **Python 3** (específicamente Python 3.7 o superior).
 2. Se abrirá una terminal en la parte inferior de VSCode
 3. Asegúrate de que estés en la carpeta correcta. Deberías ver algo como:
    ```
-   PS C:\ruta\a\tu\proyecto\facebook-client>
+   PS C:\ruta\a\tu\proyecto\facebook-api-taller>
    ```
 
 ### Paso 3: Crear el Entorno Virtual (venv)
@@ -95,7 +95,7 @@ Un entorno virtual es un espacio aislado para instalar las dependencias del proy
 
 4. Si la activación fue exitosa, verás `(venv)` al inicio de tu línea de comandos:
    ```
-   (venv) PS C:\ruta\a\tu\proyecto\facebook-client>
+   (venv) PS C:\ruta\a\tu\proyecto\facebook-api-taller>
    ```
 
 **Nota:** Si Windows te muestra un error de permisos al activar el entorno virtual, ejecuta este comando en PowerShell como administrador:
