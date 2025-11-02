@@ -47,15 +47,15 @@ Este proyecto utiliza **Python 3** (específicamente Python 3.7 o superior).
 #### Cómo instalar Python 3 en Windows 11:
 
 1. Ve a la página oficial: https://www.python.org/downloads/
-2. Haz clic en el botón grande amarillo "Download Python 3.x.x"
+2. Haz clic en el botón grande amarillo "Download Python Install Manager"
 3. Ejecuta el archivo descargado
-4. **¡MUY IMPORTANTE!** En la primera pantalla del instalador:
-   - ✅ Marca la casilla "Add Python to PATH"
-   - ✅ Marca la casilla "Install pip"
-5. Haz clic en "Install Now"
-6. Espera a que termine la instalación
-7. Cierra y vuelve a abrir el Símbolo del sistema (CMD)
-8. Verifica nuevamente con: `python --version`
+4. Cuando este abra, da clic en "Install Python"
+5. Es posible que un CMD nuevo se abra y solicite permisos, presiona "Y" para continuar
+6. Vuelve a presionar "Y" cuando consulte si quieres agregar comandos al PATH.
+7. Vuelve a presionar "Y" para continuar el proceso.
+8. Espera a que termine la instalación
+9. Cierra y vuelve a abrir el Símbolo del sistema (CMD)
+10. Verifica nuevamente con: `python --version`
 
 ---
 
@@ -92,8 +92,8 @@ Un entorno virtual es un espacio aislado para instalar las dependencias del proy
    ```bash
    venv\Scripts\activate
    ```
-
-4. Si la activación fue exitosa, verás `(venv)` al inicio de tu línea de comandos:
+   
+5. Si la activación fue exitosa, verás `(venv)` al inicio de tu línea de comandos:
    ```
    (venv) PS C:\ruta\a\tu\proyecto\facebook-api-taller>
    ```
@@ -114,12 +114,7 @@ Con el entorno virtual activado, instala las librerías necesarias:
    pip install -r requirements.txt
    ```
 
-3. Además, necesitamos instalar algunas dependencias adicionales que el proyecto utiliza:
-   ```bash
-   pip install requests pymongo
-   ```
-
-4. Espera a que se descarguen e instalen todas las librerías
+3. Espera a que se descarguen e instalen todas las librerías
 
 ---
 
@@ -227,6 +222,14 @@ Este es el **archivo principal** que ejecuta todo el flujo del programa.
 2. Verifica que MongoDB esté corriendo (si vas a usar la función de guardado):
    - Abre otra ventana de CMD
    - Ejecuta: `net start MongoDB` (si tienes MongoDB instalado como servicio)
+   - Si no lo tienes por favor instalarlo desde
+     ```
+     https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-8.2.1-signed.msi
+     ```
+     y mongo compass tambien
+     ```
+     https://downloads.mongodb.com/compass/mongodb-compass-1.48.0-win32-x64.exe
+     ```
 
 3. En la terminal de VSCode, ejecuta:
    ```bash
