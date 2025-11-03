@@ -168,9 +168,7 @@ Este archivo maneja el **almacenamiento de datos** en bases de datos.
   - Crea/usa la colección `facebook_posts`
   - Inserta todas las publicaciones
 
-- **`save_posts_in_sql_server(posts)`**: **Función por completar** (parte del taller)
-  - Esta función está vacía y es parte del ejercicio práctico
-  - Los estudiantes deben implementarla para guardar en SQL Server
+- **`get_posts_from_mongodb`**: Obtiene todas las publicaciones almacenadas en MongoDB
 
 **Nota:** Para usar MongoDB, necesitas tener MongoDB instalado localmente en tu máquina y el servicio corriendo en el puerto 27017.
 
@@ -207,9 +205,48 @@ Este es el **archivo principal** que ejecuta todo el flujo del programa.
 6. **Paso 5 - Guarda en MongoDB:**
    - Llama a la función de storage para guardar todo
 
-**TODOs del taller (actividades para completar):**
-- Línea 31: Leer la documentación del Pages API y obtener información adicional
-- Línea 38: Implementar el guardado en SQL Server
+---
+
+### 4. `main_analisis_sentimientos.py`
+
+Este archivo es parte del **taller práctico** y está diseñado para que los estudiantes implementen un análisis de sentimientos sobre los comentarios almacenados en MongoDB.
+
+**Propósito:**
+- Obtener las publicaciones con sus comentarios desde MongoDB
+- Analizar el sentimiento de cada comentario usando pysentimiento
+- Actualizar los comentarios con la información del sentimiento
+- Guardar los datos actualizados en MongoDB
+
+**Flujo de ejecución esperado:**
+
+1. **Obtiene los posts desde MongoDB:**
+   ```python
+   posts = get_posts_from_mongodb()
+   ```
+
+2. **Crea el analizador de sentimientos:**
+   ```python
+   analyzer = create_analyzer(task="sentiment", lang="es")
+   ```
+   - Utiliza pysentimiento configurado para español
+   - El analizador puede clasificar comentarios como positivos, negativos o neutrales
+
+3. **Análisis de comentarios (por implementar):**
+   - Recorrer cada post
+   - Para cada post, recorrer sus comentarios
+   - Aplicar `analyzer.predict()` a cada comentario
+   - Agregar la propiedad `sentimiento` con el resultado
+
+4. **Guardar datos actualizados:**
+   - Usar `save_posts_in_mongodb()` para actualizar la información en la base de datos
+
+**Ejemplo de uso del analizador:**
+```python
+sentimiento = analyzer.predict('Este es un comentario de ejemplo')
+print(sentimiento.output)  # Retorna: 'POS', 'NEG' o 'NEU'
+```
+
+**Nota:** Este archivo es un ejercicio práctico. Los estudiantes deben completar la sección marcada con `## TODO: Agrega tu codigo aca` para implementar el análisis de sentimientos.
 
 ---
 
