@@ -250,9 +250,9 @@ Este es el **archivo principal** que ejecuta todo el flujo del programa.
 
 Como parte del taller, se espera que completes las siguientes actividades:
 
-### Actividad 1: Entender main.py y descomentar el código (Obligatoria)
-- Ingresa a `main.py`, encontraras el codigo totalmente comentado.
-- Comienza a ller el codigo, entendiendo que hace, y descomentando las lineas.
+### Actividad 1: Entender main.py
+- Ingresa a `main.py`
+- Comienza a leer el codigo, entendiendo que hace.
 - Ejecuta el script.
 - Si todo esta correcto, deberias ser capaz de ver los datos en MongoDB.
 
@@ -261,17 +261,15 @@ Como parte del taller, se espera que completes las siguientes actividades:
 - Analiza qué información es más relevante
 - Piensa en qué consultas podrías hacer sobre estos datos
 
-### Actividad 3: Implementar Guardado en SQL Server
-- Completa la función `save_posts_in_sql_server()` en `storage.py`
-- Instala el driver necesario: `pip install pyodbc`
-- Crea la conexión a SQL Server
-- Diseña las tablas necesarias
-- Implementa la lógica de inserción
-
-### Actividad 4: Explorar el API de Facebook
-- Lee la documentación oficial: https://developers.facebook.com/docs/graph-api/reference/page/
-- Identifica qué otra información puedes obtener de las páginas
-- Modifica `facebook_client.py` para agregar una nueva función que obtenga esa información
+### Actividad 3: Realiza un analisis de sentimientos a los comentarios
+- Ingresa a `main_analisis_sentimientos.py`
+- Recorre los posts y por cada post, recorre sus comentarios.
+- Utiliza pysentimiento para obtener el sentimiento de cada comentario.
+- Actualiza cada comment con una nueva propiedad, llamada sentimiento y guarda el valor
+  retornado por la funcion `predict`
+- Utiliza `save_posts_in_mongodb` para actualizar los posts en MongoDB 
+- Verifica que la nueva propiedad fuera almacenada.
+- Recuerda que para ejecutar el script debes llamarlo como `python main_analisis_sentimientos.py`
 
 ---
 
@@ -297,6 +295,7 @@ Si tienes problemas durante el taller:
 - [Facebook Graph API Documentation](https://developers.facebook.com/docs/graph-api/)
 - [MongoDB Documentation](https://docs.mongodb.com/)
 - [Requests Library](https://requests.readthedocs.io/)
+- [pysentimiento](https://github.com/pysentimiento/pysentimiento)
 
 ---
 

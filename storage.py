@@ -60,6 +60,7 @@ def save_posts_in_mongodb(posts):
         print(f"❌ Error al guardar posts en MongoDB: {e}")
         raise
 
-def save_posts_in_sql_server(posts):
-    ## TODO: Crea el codigo para guardar en SQL SERVER
-    pass
+def get_posts_from_mongodb():
+    db = get_mongodb_database()
+    collection = db.get_collection('facebook_posts')
+    return list(collection.find())

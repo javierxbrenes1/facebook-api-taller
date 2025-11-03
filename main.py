@@ -37,16 +37,9 @@ for post in cuc_almacenes_posts:
     print('✅ Reacciones obtenidas: ', len(reactions), 'para la publicacion: ', post['id'])
 
 
-# Parte del Taller: 
-# TODO: Lee la documentacion del Pages API y trata de obtener algun otra informacion
-# https://developers.facebook.com/docs/pages-api/
-
 ## Paso 5: Guarda los posts en una base de datos NoSql 
 print('🔍 Guardando los posts en una base de datos NoSql')
 storage.save_posts_in_mongodb(cuc_almacenes_posts)
 print('✅ Posts guardados en la base de datos NoSql')
-## Parte del Taller
-# TODO: Intenta guardar los posts en SQL SERVER
-##storage.save_posts_in_sql_server(cuc_almacenes_posts)
 
 print('🥑 Fin del programa')
